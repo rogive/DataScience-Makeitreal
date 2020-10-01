@@ -30,8 +30,11 @@ ecuacion1 = (25*68) + (13/28)
 print(ecuacion1)
 
 # 7- Imprima el resultado de la siguiente operacion: 80 / 0
-#print(80/0)
-print("indeterminado -> error division por cero")
+
+try:
+    80/0
+except ZeroDivisionError:
+  print("No se puede dividir por cero")
 
 # 8- ¡Has decidido meterte en el mundo de tejer edredones! Para calcular el número de cuadrados que necesitarás para tu primera colcha, vamos a crear dos variables: quilt_width y quilt_length. Hagamos este primer edredón de 8 cuadrados de ancho y 12 de largo. Imprime el número de cuadrados que necesitarás para crear el edredón!
 quilt_width = 8
@@ -57,7 +60,6 @@ nice_sweater = 39
 precio_total += nice_sweater
 fun_books = 20
 precio_total += fun_books
-
 # 11- Asigne el string: "Stranger, if you passing meet me and desire to speak to me, why should you not speak to me? And why should I not speak to you?" a la variable to_you
 
 to_you = """Stranger, if you passing meet me and desire to speak to me, why should you not speak to me? And why should I not speak to you?"""
