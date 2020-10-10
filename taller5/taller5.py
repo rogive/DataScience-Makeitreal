@@ -43,15 +43,24 @@ print(full_gradebook)
 ## Part III (Slice)
 # Usted trabaja en una pizzeria, y para mantener en control que tipo de pizzas usted vende, crea una lista llamada toppings 
 # que contenga lo siguiente: pepperoni, pineapple, cheese, sausage, olives, anchovies, mushrooms
+
 # Para mantener un control sobre cuanto cuesta cada trozo de pizza cree una lista llamada prices que contenga: 2, 6, 1, 3, 2, 7, 2.
+
 # Encuentre el largo de la lista toppings y guardelo en una variable llamada: num_pizzas
+
 # Imprima el string "We sell X different kinds of pizza!" donde la X es num_pizzas
+
 # Use zip para combinar las dos listas dentro de una lista llamada: pizzas que tiene la siguiente estructura: 
 # [(price_0, topping_0), (price_1, topping_1), (price_2, topping_2), ...]
+
 # Recuerde que debe tener el resultado en una lista, asi: list(zip(____, ____))
 # Imprima pizzas se ve como se espera que este?
+
 # Organice la lista pizzas de forma que las pizzas con el menor precio estan al principio de la lista
+
 # Guarde el primer elemento de pizzas en una variable llamada: cheapest_pizza
+
+
 # Un tipo de traje y corbata llega a la pizzeria gritando: "Deme la pizza mas cara que tenga!". Obtenga el ultimo elemento 
 # de la lista pizzas y guardelo en una variable llamada: priciest_pizza
 # Otro grupo de personas quiere las mas economicas, asi que de la lista pizzas guarde las 3 pizzas mas economicas en una 
@@ -61,8 +70,13 @@ print(full_gradebook)
 
 toppings = ["pepperoni", "pineapple", "cheese", "sausage", "olives", "anchovies", "mushrooms"]
 prices = [2, 6, 1, 3, 2, 7, 2]
+
 num_pizzas = len(toppings)
+
+# Interpolación
 print(f'We sell {num_pizzas} different kinds of pizza!')
+print('We sell ' + str({num_pizzas}) + 'different kinds of pizza!')
+
 
 pizzas = list(zip(prices, toppings))
 print(pizzas)
@@ -72,7 +86,7 @@ print(pizzas)
 print(sorted(pizzas))
 
 cheapest_pizza = pizzas[0]
-priciest_pizza = pizzas[len(pizzas)-1]
+priciest_pizza = pizzas[-1]
 three_cheapest = pizzas[:3]
 print(cheapest_pizza)
 print(priciest_pizza)
