@@ -1,0 +1,5 @@
+# created by virtualenv automatically
+/jupyter_numpy/.ipynb_checkpoints
+/jupyter_numpy/Lib
+/jupyter_numpy/Scripts
+/jupyter_numpy/pyvenv.cfg
